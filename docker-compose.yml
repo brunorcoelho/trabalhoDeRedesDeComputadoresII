@@ -1,28 +1,28 @@
 version: '3.8'
 
 services:
-  app:
-    build: .
-    container_name: trabalhoDeRedesII
+  minha_aplicacao_web:
+    build: .  
+    container_name: minha_aplicacao_web
     ports:
       - "3000:3000"
-    envirovment:
+    environment:
       - DB_HOST=db
-      - DB_USER=user
-      - DB_PASSWORD=123
-      - DB_NAME=trabalhoDeRedesII
+      - DB_USER=user_desafio
+      - DB_PASSWORD=senha_forte_123
+      - DB_NAME=desafio_db
     depends_on:
-      - db
-  
+      - db 
+
   db:
-    image: postgres:17-bookworm
-    container_name: bancoPostgres
-    envirovment:
-      - POSTGRES_USER=user
-      - POSTGRES_PASSWORD=123
-      - POSTGRES_DB=trabalhoDeRedesII
+    image: postgres:14-alpine 
+    container_name: meu_banco_postgres
+    environment:
+      - POSTGRES_USER=user_desafio
+      - POSTGRES_PASSWORD=senha_forte_123
+      - POSTGRES_DB=desafio_db
     volumes:
       - postgres_data:/var/lib/postgresql/data
 
 volumes:
-  postgres_data:
+  postgres_data: 
