@@ -1,28 +1,21 @@
-version: '3.8'
-
 services:
   minha_aplicacao_web:
-    build: .  
+    build: .
     container_name: minha_aplicacao_web
     ports:
       - "3000:3000"
-    environment:
-      - DB_HOST=db
-      - DB_USER=user_desafio
-      - DB_PASSWORD=senha_forte_123
-      - DB_NAME=desafio_db
+    env_file:
+      - .env
     depends_on:
-      - db 
+      - db
 
   db:
-    image: postgres:14-alpine 
+    image: postgres:14-alpine
     container_name: meu_banco_postgres
-    environment:
-      - POSTGRES_USER=user_desafio
-      - POSTGRES_PASSWORD=senha_forte_123
-      - POSTGRES_DB=desafio_db
+    env_file:
+      - .env
     volumes:
       - postgres_data:/var/lib/postgresql/data
 
 volumes:
-  postgres_data: 
+  postgres_data:

@@ -1,17 +1,18 @@
 const express = require('express');
-const {Pool} = require('pg');
-const { database, password } = require('pg/lib/defaults');
+const { Pool } = require('pg');
+// Load environment variables from .env
+require('dotenv').config();
 
 const app = express()
 const port = 3000;
 
-const pool = new Pool ({
+const pool = new Pool({
     user: process.env.DB_USER,
     host: process.env.DB_HOST,
     database: process.env.DB_NAME,
     password: process.env.DB_PASSWORD,
     port: 5432,
-})
+});
 
 app.get('/', async (req, res) => {
     try {
