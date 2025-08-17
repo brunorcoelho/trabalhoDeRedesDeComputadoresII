@@ -1,0 +1,28 @@
+{
+  "name": "trabalhoderedesdecomputadoresii",
+  "version": "1.0.0",
+  "description": "Trabalho realizado na disciplina de Redes de Computadores II.",
+  "keywords": [
+    "docker",
+    "SQL"
+  ],
+  "homepage": "https://github.com/brunorcoelho/trabalhoDeRedesDeComputadoresII#readme",
+  "bugs": {
+    "url": "https://github.com/brunorcoelho/trabalhoDeRedesDeComputadoresII/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brunorcoelho/trabalhoDeRedesDeComputadoresII.git"
+  },
+  "license": "ISC",
+  "author": "Bruno Coelho, Caio Guilherme, Fernando Zanette",
+  "type": "commonjs",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "pg": "^8.16.3"
+  }
+}
