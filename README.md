@@ -1,5 +1,10 @@
 # Trabalho de Redes de Computadores II – Marketplace Demo
 
+Disciplina: Redes de Computadores II
+Curso: Ciência da Computação
+Docente: Roberto Benedito De Oliveira Pereira
+Grupo de Discentes: Bruno Coelho, Caio Guilherme, Fernando Zanette & Giovani Gabriel
+
 Aplicação web simples (Node.js + Express + PostgreSQL + React) para cadastro de usuários em um marketplace. Inclui:
 
 - API REST para registro de usuários (`/api/register`) e listagem (`/api/users`).

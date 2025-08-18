@@ -75,17 +75,16 @@ function RegistrationForm() {
             <input id="name" name="name" value={form.name} onChange={onChange} placeholder="Seu nome" required />
           </div>
           <div>
-            <label htmlFor="email">Email</label>
+            <label htmlFor="email">E-mail</label>
             <input id="email" type="email" name="email" value={form.email} onChange={onChange} placeholder="voce@exemplo.com" required />
           </div>
           <div>
             <label htmlFor="password">Senha</label>
             <input id="password" type="password" name="password" value={form.password} onChange={onChange} placeholder="••••••••" required />
-            <small className="helper">Mínimo 6 caracteres.</small>
           </div>
           <button type="submit" disabled={loading}>{loading ? 'Registrando...' : 'Registrar'}</button>
         </form>
-        <section style={{marginTop:'2.5rem'}}>
+        <section style={{marginTop:'2rem'}}>
           <div style={{display:'flex', alignItems:'center', justifyContent:'space-between', marginBottom: '.75rem'}}>
             <h2 style={{margin:0, fontSize:'1.25rem'}}>Usuários Recentes</h2>
             <button type="button" onClick={loadUsers} disabled={refreshing} style={{background:'#6366f1', padding:'.55rem .9rem', fontSize:'.8rem'}}>
