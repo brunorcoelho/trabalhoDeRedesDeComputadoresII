@@ -121,7 +121,7 @@ function RegistrationForm() {
         </section>
       </main>
       <footer>
-        &copy; {new Date().getFullYear()} Marketplace Demo.
+        &copy; {new Date().getFullYear()} Bruno Coelho, Caio Guilherme, Fernando Zanette & Giovani Oliveira.
       </footer>
     </>
   );
