@@ -60,21 +60,17 @@ Pré-requisitos: Docker e Docker Compose instalados.
 	```bash
 	git clone https://github.com/brunorcoelho/trabalhoDeRedesDeComputadoresII.git
 	cd trabalhoDeRedesDeComputadoresII
-	```
-2. Crie o arquivo `.env` baseado no exemplo:
-	```bash
-	cp .env.example .env
-	```
-3. Suba os containers (build automático):
+	``````
+2. Suba os containers (build automático):
 	```bash
 	docker compose up --build -d
 	```
-4. Verifique se os serviços estão de pé:
+3. Verifique se os serviços estão de pé:
 	```bash
 	docker compose ps
 	```
-5. Acesse o frontend: http://localhost:3000
-6. Cadastre um usuário pelo formulário. Deverá aparecer mensagem de sucesso e a tabela “Usuários Recentes” será atualizada.
+4. Acesse o frontend: http://localhost:3000
+5. Cadastre um usuário pelo formulário. Deverá aparecer mensagem de sucesso e a tabela “Usuários Recentes” será atualizada.
 
 ## Rodar Queries no Banco
 
